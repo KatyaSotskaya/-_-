@@ -87,3 +87,7 @@ def cutter_machines(Qdaily, t, at, Rk):
 N_dumpling_machines = dumpling_machines(Qdaily, t, Rpa)
 N_dough_kneading_machines = dough_kneading_machines(Qdaily, t, at, Rtm)
 N_cutter_machines = cutter_machines(Qdaily, t, at, Rk)
+
+print("Technological line for the production of dumplings ", N_dumpling_machines)
+print("Dough preparation technological line ", N_dough_kneading_machines)
+print("Technological line for preparation of minced meat ", N_cutter_machines)
