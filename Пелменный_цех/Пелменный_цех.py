@@ -76,3 +76,10 @@ def dough_kneading_machines(Qdaily, t, at, Rtm):
     Ptlt = Ptlp * at / 100
     N = math.ceil(Ptlt / Rtm)
     return N
+
+# III. Технологическая линия подготовки фарша
+def cutter_machines(Qdaily, t, at, Rk):
+    Ptlp = Qdaily / (2 * t)
+    Ptlf = ((100 - at) * Ptlp) / 100
+    N = math.ceil(Ptlf / Rk)
+    return N
