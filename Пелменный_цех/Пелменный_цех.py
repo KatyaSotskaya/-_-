@@ -63,3 +63,9 @@ def print_name_arr(arr, name_arr):
 
 
 print_name_arr(arr, name_arr)
+
+# I. Технологическая линия изготовления пельменей
+def dumpling_machines(Qdaily, t, Rpa):
+    Ptlp = Qdaily / (2 * t)
+    N = math.ceil(Ptlp / Rpa)
+    return N
