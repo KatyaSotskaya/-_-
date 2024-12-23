@@ -54,3 +54,12 @@ Rtm = float(arr[4])  # производительность тестомесил
 
 # III. Технологическая линия подготовки фарша.
 Rk = float(arr[5])  # производительность куттера рк
+
+def print_name_arr(arr, name_arr):
+    n = len(arr)
+    for index in range(n):
+        print(arr[index] + "  " + name_arr[index])
+    return 1
+
+
+print_name_arr(arr, name_arr)
