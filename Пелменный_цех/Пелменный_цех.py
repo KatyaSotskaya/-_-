@@ -83,3 +83,7 @@ def cutter_machines(Qdaily, t, at, Rk):
     Ptlf = ((100 - at) * Ptlp) / 100
     N = math.ceil(Ptlf / Rk)
     return N
+
+N_dumpling_machines = dumpling_machines(Qdaily, t, Rpa)
+N_dough_kneading_machines = dough_kneading_machines(Qdaily, t, at, Rtm)
+N_cutter_machines = cutter_machines(Qdaily, t, at, Rk)
