@@ -69,3 +69,10 @@ def dumpling_machines(Qdaily, t, Rpa):
     Ptlp = Qdaily / (2 * t)
     N = math.ceil(Ptlp / Rpa)
     return N
+
+# II. Технологическая линия подготовки теста
+def dough_kneading_machines(Qdaily, t, at, Rtm):
+    Ptlp = Qdaily / (2 * t)
+    Ptlt = Ptlp * at / 100
+    N = math.ceil(Ptlt / Rtm)
+    return N
